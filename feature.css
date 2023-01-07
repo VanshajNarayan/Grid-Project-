@@ -1,0 +1,36 @@
+.feature {
+  grid-column: center-start / center-end;
+
+  margin: 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 6rem;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 1.5rem 2.5rem;
+  align-items: start;
+}
+
+.features .favicon {
+  fill: #c69963;
+  width: 4.5rem;
+  height: 4.5rem;
+  grid-row: 1 / span 2;
+  transform: translateY(-1rem);
+}
+
+.features .h4-para {
+  font-size: 1.7rem;
+  line-height: 1.6;
+  letter-spacing: 0.1rem;
+}
+
+.features .heading-4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.9rem;
+  color: #54483a;
+}

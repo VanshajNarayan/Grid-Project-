@@ -1,0 +1,68 @@
+.header {
+  background-color: rgb(16, 29, 44);
+  grid-column: full-start / col-end 6;
+  background-image: linear-gradient(
+      rgba(16, 29, 44, 0.932),
+      rgba(16, 29, 44, 0.932)
+    ),
+    url(./Picture/header-img.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  padding: 8rem;
+  padding-top: 4rem;
+
+  display: grid;
+  grid-template-rows: 1fr min-content 6rem 1fr;
+  grid-template-columns: max-content;
+  row-gap: 1.5rem;
+  justify-content: center;
+}
+
+.header .header-logo {
+  height: 3rem;
+  justify-self: center;
+}
+
+.header_btn {
+  align-self: start;
+  justify-self: start;
+}
+
+.header-main-heading {
+  font-size: 4.5rem;
+  color: #f9f7f6;
+  line-height: 1;
+}
+
+.header .header-seenon-text {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+  align-items: center;
+
+  font-size: 1.6rem;
+  color: #aaa;
+  padding-top: 11rem;
+}
+
+.header .header-seenon-text::before,
+.header .header-seenon-text::after {
+  content: "";
+  height: 0.1rem;
+  background-color: currentColor;
+}
+
+.header .header-seenon-logo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3rem;
+  justify-items: center;
+  padding-top: 6rem;
+}
+
+.header img {
+  height: 2.5rem;
+  filter: brightness(60%);
+}
